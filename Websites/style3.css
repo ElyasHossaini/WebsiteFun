@@ -1,0 +1,123 @@
+body{
+    background-image: url(images/fnalbum.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    color: white;
+}
+main{
+    color: white;
+}
+#container{
+    border: 2px solid;
+}
+#container p{
+    background-color: blue;
+}
+a:link{
+    color: red;
+}
+a:hover{
+    color: turquoise;
+    font-size: 1.1em;
+}
+a:active{
+    color: aquamarine;
+    font-size: 1.1em;
+}
+a:visited{
+    color: white;
+}
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: brown;
+}
+li:nth-child(2n){
+    background-color: blue;
+}
+#greeting p{
+    background-color: lightblue;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}
+h2::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+p::first-line{
+    background-color: yellowgreen;
+}
+p::selection{
+    color: black;
+    background-color: white;
+}
+#apple::after{
+    content: "🍎";
+}
+#orange::after{
+    content: "🍊";
+}
+#banana::after{
+    content: "🍌";
+}
+#fruit li::marker{
+    content: "✅";
+    font-size: 1.5em;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: red;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: red;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    background-color: aqua;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 5px 5px red;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: lightblue;
+}
+.dropdown a:hover{
+    background-color: lightcoral;
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: green;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.pagination a:hover:not(.active){
+    background-color: grey;
+}

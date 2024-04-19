@@ -1,0 +1,30 @@
+main{
+    background-color: darkkhaki;
+}
+main{
+    color: #8fbc8f;
+}
+main{
+    border: 2px rgb(0, 0, 0) solid;
+}
+footer{
+    color: white;
+}
+#fh{
+    color: red;
+}
+#sh{
+    color: blue;
+}
+#thh{
+    color: green;
+}
+#foh{
+    color: black;
+}
+.odd{
+    background-color: white;
+}
+.even{
+    background-color: darkblue;
+}

@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+main{
+    margin: 20px;
+}
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: darkgray;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(99, 98, 98);
+}
+.navbar li{
+    float: left;
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+.gallary{
+    display: inline-block;
+    border: 5px darkgray solid;
+    margin: 5px;
+    width: 200px;
+}
+.gallary .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallary:hover{
+    border: 5px darkblue solid;
+}
+.gallary img{
+    width: 100%;
+    height: auto;
+}
+footer{
+    display: block;
+    clear: both;
+    text-align: center;
+}
+.icons{
+    text-align: center;
+    padding: 20px;
+    background-color: darkgray;
+}
+.icons a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.fa-brands.fa-twitter.fa-2xl{
+    color: rgb(70, 177, 243)
+}
+.fa-brands.fa-twitter.fa-2xl:hover{
+    color: rgb(72, 185, 255)
+}
+.fa-brands.fa-instagram.fa-2xl{
+    color: rgb(249, 8, 181);
+}
+.fa-brands.fa-instagram.fa-2xl:hover{
+    color: rgb(190, 13, 140);
+}
+.fa-brands.fa-youtube.fa-2xl{
+    color: red;
+}
+.fa-brands.fa-youtube.fa-2xl:hover{
+    color: rgb(186, 1, 1);
+}
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+}

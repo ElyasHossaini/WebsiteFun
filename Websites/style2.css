@@ -1,0 +1,130 @@
+body{
+    background-color: darkslategray;
+    margin: 15px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Elyas{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+#p1{
+    color: red;
+    font-size: 1.5em;
+}
+#p2{
+    color: rgb(102, 222, 255);
+    font-weight: bold;
+}
+#p3{
+    color: #59ff5f;
+    font-style: italic;
+}
+#p4{
+    color: hsl(283, 100%, 64%);
+    font-family: Open Sans;
+}
+h1{
+    border-style: solid;
+    border-width: 3px;
+    border-color: antiquewhite;
+    border-radius: 10px;
+}
+#ElyasHossaini{
+    border-bottom: 3px dotted red;
+    border-top: 3px solid blue;
+    border-left: 3px dotted orange;
+    border-right: 3px solid greenyellow;
+}
+h3{
+    text-shadow: 1px 2px 5px blueviolet, -1px 2px 5px red;
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    box-shadow: 3px 3px 5px  cyan;
+}
+.box{
+    border: 5px solid;
+    font-size: 1.5em;
+    width: 250px;
+    height: 250px;
+}
+#box2{
+    background-color: aqua;
+    margin-left: auto;
+}
+#box3{
+    background-color: aquamarine;
+    margin: auto;
+}
+#boxvisible{
+    border: 2px solid;
+    height: 50px;
+    overflow: visible;
+}
+#boxhidden{
+    border: 2px solid;
+    height: 50px;
+    overflow: hidden;
+}
+#boxclip{
+    border: 2px solid;
+    height: 50px;
+    overflow: clip;
+    overflow-clip-margin: 13px;
+}
+#boxscroll{
+    border: 2px solid;
+    height: 50px;
+    overflow: scroll;
+}
+#boxauto{
+    border: 2px solid;
+    height: 50px;
+    overflow: auto;
+}
+#divdisplay{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+#spandisplay{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.heightwidth{
+    border: 2px solid;
+    padding: 25px;
+    box-sizing: border-box;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+
+    min-height: 50%;
+}
+#relativep{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+footer{
+    border: 5px solid red;
+    display: inline-block;
+}
+#image1{
+    float: left;
+}
+#image2{
+    float: right;
+}

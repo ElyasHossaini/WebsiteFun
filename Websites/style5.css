@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    border: 10px solid black;
+    height: 60vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 1em;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    border-radius: 15px;
+    text-align: center;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: blue;
+}
+#box3{
+    background-color: greenyellow;
+}
+#box4{
+    background-color: aqua;
+}
+/*
+Translations:
+use transform: translate(x, y)
+if u want only 1 of them, use translateX(...) or translateY(...)
+
+use transform: rotateX Y or Z() ro rotate it
+
+use transform: scaleX or Y(...) to scale/make bigger
+if you want to do both use scale(x, y)
+
+use transform: skewX or Y(...) to slant/skew the image
+if you want to do both use skew(x, y)
+*/
+#box{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 15em;
+    text-align: center;
+    background-color: chartreuse;
+
+    transform: translate(400px, 50px) rotateZ(45deg) scaleX(0.5);
+}

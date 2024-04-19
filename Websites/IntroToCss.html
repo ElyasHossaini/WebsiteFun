@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IntroToCss</title>
+    <link rel="icon" type="image/png" href="images/TMSlilT.png">
+    <!--link to external css-->
+    <link rel="stylesheet" href="style2.css">
+    <!--copy and paste font from google here to use it-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!--font-size acn change with pixels-->
+        <h2>Elyas</h2>
+        <p id="Elyas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, qui dolore nihil nostrum velit, officia voluptates nam soluta deleniti commodi nisi! Tempore perferendis quae iste nulla quos rem! Deleniti, sed.</p>
+
+    </header>
+
+    <main>
+        <!--named color-->
+        <!--font-size 1em/em mean average like 13m=100%-->
+        <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam delectus cum totam maxime nobis dolore corrupti expedita eos ducimus doloribus? Reiciendis fuga eveniet velit similique, possimus saepe quod sapiente dolorum!</p>
+        <br>
+        <!--rgb values-->
+        <!--font-weight is thickness/bolding feature-->
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatum explicabo cum molestias quis quas accusamus voluptatem quam quidem doloribus laudantium perferendis, ratione quaerat, voluptatibus tempore praesentium eligendi distinctio modi.</p>
+        <br>
+        <!--hexadecimal values-->
+        <!--font-style can change to italics-->
+        <p id="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit cumque aliquam repellendus tenetur ab quidem iure alias pariatur nostrum at magni obcaecati cum et, nam doloribus, optio aspernatur. Eaque, veritatis?</p>
+        <br>
+        <!--hsl values-->
+        <!--cange font family with google imported fonts-->
+        <p id="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit blanditiis minus perspiciatis dolore atque, autem aliquam quam, obcaecati ad quo molestias saepe ipsam magnam. Magni magnam aperiam quasi odio.</p>
+        <br>
+
+        <!--border-style Can make different types of borders like solid for example-->
+        <!--border-width changes thickness-->
+        <!--border-color chnages border color-->
+        <!--border-radius chnages the roundness of the border/edges-->
+        <h1>Elyas Hossaini</h1>
+        <br>
+        <!--can make border sides different-->
+        <p id="ElyasHossaini">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, obcaecati culpa! Neque, quas non! Blanditiis cum cumque reiciendis aliquam quo sint. Suscipit accusamus dicta sint quaerat repellendus iure voluptatem ullam?</p>
+        <br>
+
+        <!--text-shadow adds a shadow around your text-->
+        <h3>Ely</h3>
+        <!--text-box adds a shadow around div-->
+        <div id="box1"></div>
+        <br>
+
+        <!--margins is space between. pretty simple-->
+        <div class="box" id="box2">Box 1</div>
+        <div class="box" id="box3">Box 2</div>
+
+
+        <br>
+
+        <!--overflow = property that sets the desired behavior when content
+        does not fit in the parent elemnt box i.e. (overflows)-->
+        <!--visible = show everything, even if not in box-->
+        <div id="boxvisible">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, itaque voluptas! Iste, voluptas obcaecati beatae harum ea eum quia est, tempora enim assumenda repellat esse animi optio voluptatibus alias nisi!
+            </p>
+        </div>
+
+        <br>
+        <br>
+
+        <!--hidden = only show in box-->
+        <div id="boxhidden">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, itaque voluptas! Iste, voluptas obcaecati beatae harum ea eum quia est, tempora enim assumenda repellat esse animi optio voluptatibus alias nisi!
+            </p>
+        </div>
+
+        <br>
+        <br>
+
+        <!--clip = like hidden, but can choose how much you want to show-->
+        <div id="boxclip">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, itaque voluptas! Iste, voluptas obcaecati beatae harum ea eum quia est, tempora enim assumenda repellat esse animi optio voluptatibus alias nisi!
+            </p>
+        </div>
+
+        <br>
+        <br>
+
+        <!--scroll = makes a scroll box-->
+        <div id="boxscroll">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, itaque voluptas! Iste, voluptas obcaecati beatae harum ea eum quia est, tempora enim assumenda repellat esse animi optio voluptatibus alias nisi!
+            </p>
+        </div>
+
+        <br>
+        <br>
+
+        <!--auto = automatically make scroll box if needed-->
+        <div id="boxauto">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, itaque voluptas! Iste, voluptas obcaecati beatae harum ea eum quia est, tempora enim assumenda repellat esse animi optio voluptatibus alias nisi!
+            </p>
+        </div>
+        
+
+        <!--display = property specifies if/how an element is displayed-->
+        <!--block-level = start on a new line, take up the full width available
+        (h1, div, p, form, header, footer)-->
+        <!--inline = do not start on a new line, width is limited to what is needed
+        (span, a, img)-->
+        <!--block makes block, even if it is a span, which is inkine-->
+        <!--inline makes inline, even if its a div with a width and height, which is a block-->
+        <!--inline-block = is like block(can add height and width) but can have words inline-->
+        <!--none = erases element-->
+        <!--visiblity = like display, but if invisible, takes up space, and not just deleted-->
+        <div id="divdisplay">div</div>
+
+        <span id="spandisplay">span</span>
+
+        <br>
+
+        <div class="heightwidth">
+            <h2>This is box 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquid earum, blanditiis cum odit ipsa ullam nobis ab mollitia unde sequi voluptatem, reiciendis possimus eaque consequatur ad delectus totam est!</p>
+        </div>
+
+        <div class="heightwidth">
+            <h2>this is box 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deleniti ad voluptas eos sit nesciunt soluta ducimus! Velit, dolorum ratione itaque quis eum at distinctio recusandae illo eos facere architecto.</p>
+        </div>
+
+        <br>
+
+        <p>lol</p>
+
+
+        <!--position
+                relative = change where it is with top and left element
+                fixed = stays at given position. use top left right or bottom. follows you
+                absolute = div in div. small box follows big box
+                sticky = stays in position till u scroll, then says at top of page
+                static = just in one spot/default-->
+
+        <div id="relativep"></div>
+
+        <br>
+
+    </main>
+
+    <footer>
+        <!--float element allows for other things to flow around it-->
+        <!--if image or other things dont fit in border, use display: flow-root; where border element is-->
+        <img id="image1" src="images/D2WinlilT.jpg" alt="tjay" height="600px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum accusamus illo sequi cum recusandae voluptas eos nisi vero. Cupiditate ut officia labore aliquid, rem dicta! Cum vel qui ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non rem, iure vel magni sunt consequatur cum blanditiis eaque nihil aperiam mollitia provident eos accusantium perspiciatis. Nisi ipsam eaque odio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum accusamus illo sequi cum recusandae voluptas eos nisi vero. Cupiditate ut officia labore aliquid, rem dicta! Cum vel qui ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non rem, iure vel magni sunt consequatur cum blanditiis eaque nihil aperiam mollitia provident eos accusantium perspiciatis. Nisi ipsam eaque odio?</p>
+        <img id="image2" src="images/TMSlilT.png" alt="tjay2" height="600px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum accusamus illo sequi cum recusandae voluptas eos nisi vero. Cupiditate ut officia labore aliquid, rem dicta! Cum vel qui ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non rem, iure vel magni sunt consequatur cum blanditiis eaque nihil aperiam mollitia provident eos accusantium perspiciatis. Nisi ipsam eaque odio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum accusamus illo sequi cum recusandae voluptas eos nisi vero. Cupiditate ut officia labore aliquid, rem dicta! Cum vel qui ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non rem, iure vel magni sunt consequatur cum blanditiis eaque nihil aperiam mollitia provident eos accusantium perspiciatis. Nisi ipsam eaque odio?</p>
+    </footer>
+</body>
+</html>

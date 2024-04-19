@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image.png" href="images/TMSlilT.png">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <form action="index.php" method="post" enctype="multipart/form-data"> <!--action is where info goes/POST for sensitive data/GET for not sensitive/enctype for large submitions-->
+
+        <!--declare what label is for i.e. label for="username"-->
+        <label for="username">username:</label>
+        <!--next do the input type. i.e. input type="text"-->
+        <!--id must be same as for-->
+        <!--placeholder is light text to show user what to input-->
+        <!--amount of text user can imput can have a max or min. i.e. minlength="6" or maxlength="15"-->
+        <!--required attribute is used so that user is required to input data-->
+        <input type="text" id="username" placeholder="Enter Username" minlength="6" maxlength="15" required>
+
+        <br>
+
+        <!--identicle to last description/exeption is type which is now password(used for passwords)-->
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="Enter Password" minlength="8" required>
+
+        <br>
+
+        <!--identicle but type is changed to email/requires an @ to accept request-->
+        <label for="Email">email:</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+
+        <br>
+
+        <!--type changed to tel, for telephone-->
+        <!--can use pattern to have a required input. i.e. pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"-->
+        <label for="phone">phone number:</label>
+        <input type="tel" id="phone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <br>
+
+        <!--input type date allows for a date to be inputed by user-->
+        <label for="bday">Birthday:</label>
+        <input type="date" id="bday" required>
+
+        <br>
+
+        <!--type="quatity" is used for user to chose how many they want-->
+        <!--can have maximum or minimun. Use max or min-->
+        <!--value makes default value-->
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1">
+
+        <br>
+
+        <!--radio type is for selecting something(sorry future me)-->
+        <!--value should be same as id or for, but doesn't have to-->
+        <!--have name="(for code)" to only chose one-->
+        <label for="title">title:</label>
+        
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="Dr.">Dr.</label>
+        <input type="radio" id="Dr." value="Dr." name="title">
+
+        <br>
+
+        <!--have select and inside options to make a selection type menu-->
+        <!--select for selection box-->
+        <!--option value="xxx" for the option and where data goes-->
+        <label for="payment">payment:</label>
+        <select>
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select>
+
+        <br>
+
+        <!--checkbox type to make a simple checkbox-->
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe">
+
+        <br>
+
+        <!--text area for a text box for anything-->
+        <!--use rows and cols/columbs to make box bigger or smaller-->
+        <label for="comment">comment:</label>
+        <textarea id="comment" rows="3" cols="15" placeholder="Place Feedback Here"></textarea>
+
+        <br>
+
+        <!--file type is used do user can submit a file-->
+        <!--accepts is used to accept only certain files. i.e. accepts="image/png"-->
+        <label for="file">file:</label>
+        <input type="file" id="file" accept="image/png, image/jpg">
+
+        <br>
+
+        <!--reset type to make a reset button-->
+        <input type="reset">
+
+        <br>
+
+        <!--submit type to make submit button-->
+        <input type="submit">
+
+    </form>
+    
+</body>
+</html>

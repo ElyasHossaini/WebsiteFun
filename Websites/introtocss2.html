@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introtocss2</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" href="images/D2WinlilT.jpg">
+</head>
+
+<body>
+    
+    <header>
+        <!--how to add backround in body section of css-->
+        <h1>Hello</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas maiores molestiae cumque veniam ipsum amet. Accusantium atque quas culpa suscipit ducimus. Cumque distinctio nostrum aperiam debitis veniam saepe iste earum.</p>
+    </header>
+
+    <main>
+        <!--
+            Combinators = explains the relationship between listed selectors
+              = descendant
+            > = child
+            ~ = general siblings
+            + = adjacent siblings
+        -->
+        <!--container like dad. descendant of dad(container) is 1 2 and 3-->
+        <!--child of dad is only 1 and 2, because 3 is like grandchild/deeper-->
+        <!--general sibling is like siblings to container/in this situation, (p) is the siblings
+        so both 4 and 5 change color-->
+        <!--adjacent siblings is like the one right after container, so only 4 changes color-->
+        <div id="container">
+            <p>this is 1</p>
+            <p>this is 2</p>
+            <div>
+                <p>this is 3</p>
+            </div>
+        </div>
+
+        <p>this is 4</p>
+        <p>this is 5</p>
+
+        <!--use (:) to add sudo things-->
+        <!--for example a:link will allow you to change things like the link color-->
+        <!--a(:hover) will aloow you to change the properties of the item you hover the mouse on-->
+        <!--a(:active) will allow you to chnage the properties of the item you are currently clicking-->
+        <!--a:(visited) will allow you to chnage the properties of the item after the user clicks it-->
+        <a href="https://google.com">google</a>
+
+        <!--li(:not(:hover)) allows you to chnage property of something you do not hover-->
+        <!--li(:nth-child(...)) allows you to chnage properties of certain chosen things-->
+
+        <ul>
+            <li>this is number 1</li>
+            <li>this is number 2</li>
+            <li>this is number 3</li>
+            <li>this is number 4</li>
+            <li>this is number 5</li>
+            <li>this is number 6</li>
+            <li>this is number 7</li>
+            <li>this is number 8</li>
+            <li>this is number 9</li>
+        </ul>
+
+        <!--you can have something not visible till you hover over something else.
+        chack style3.css for more info-->
+        <div id="greeting">hover here
+            <p>hello</p>
+        </div>
+
+        <!--psudo-element = keyword added after a selector thats used to style
+        a specific parts of an element
+    
+        formula =         selector::psudo-element
+        example =         h1::first-letter{
+
+        }
+    -->
+
+    <h2>Hello</h2>
+
+    <!--use p(::selection) to change properties of selected items-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At minus nostrum nulla pariatur delectus? Itaque sapiente consequuntur quasi culpa, assumenda iste earum illo doloribus labore consectetur molestiae temporibus. Atque, esse.</p>
+
+    <!--use ::before or ::after to add things before and after stuff.
+    Use content: to add it-->
+    <ul id="fruit">
+        <li id="apple">apple</li>
+        <li id="orange">orange</li>
+        <li id="banana">banana</li>
+    </ul>
+
+    <!--this is how to create dropdown menu
+    look at css for details-->
+    <div class="dropdown">
+        <button>Food</button>
+        <div class="content">
+            <a href="">apple</a>
+            <a href="">orange</a>
+            <a href="">banana</a>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id, maiores placeat autem officiis similique harum magnam, voluptatibus molestias commodi consequatur quo aspernatur ullam porro. Quae adipisci quisquam facere exercitationem.</p>
+
+    </main>
+
+    <footer>
+        <!--pagination is the code that seperates multiple pages. i.e. the numbers at the bottom-->
+        <div class="pagination">
+            <a href="introtocss2.html" ><</a>
+            <a href="introtocss2.html" class="active">1</a>
+            <a href="index.html">2</a>
+            <a href="IntroToCss.html">3</a>
+            <a href="lyrics.html">4</a>
+            <a href="index.html">></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
